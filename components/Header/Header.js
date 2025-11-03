@@ -25,11 +25,11 @@ export const HeaderComponent = () => {
               <use xlinkHref={`/icons.svg#icon-twitter-1`} />
             </svg>
           </Link> */}
-          <Link href="https://www.linkedin.com/" target="_blank" aria-label="link linkendin">
+          {/* <Link href="https://www.linkedin.com/" target="_blank" aria-label="link linkendin">
             <svg width="30" height="20" fill="#505050" aria-hidden="true">
               <use xlinkHref={`/icons.svg#icon-linkedin-1`} />
             </svg>
-          </Link>
+          </Link> */}
           {/* <Link href="https://www.instagram.com/" target="_blank" aria-label="link instagram">
             <svg width="30" height="20" fill="#505050" aria-hidden="true">
               <use xlinkHref={`/icons.svg#icon-instagram-2`} />

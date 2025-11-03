@@ -56,7 +56,7 @@ export const MenuComponent = () => {
             </NavItemText>
           </Link>
         </NavItem>
-        {!user && (
+        {/* {!user && (
           <NavItem>
             <Link href="/quick-question" onClick={() => setIsOpen(false)}>
               <NavItemText
@@ -66,7 +66,7 @@ export const MenuComponent = () => {
               </NavItemText>
             </Link>
           </NavItem>
-        )}
+        )} */}
 
         <NavItem>
           <Link href="/contact" onClick={() => setIsOpen(false)}>

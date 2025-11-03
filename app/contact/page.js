@@ -15,8 +15,8 @@ export default function ContactPage() {
           backgroundColor: "gray",
         }}
       >
-        <h2>nr kontaktowy </h2>
-        <h2>+48 793 083 013</h2>
+        <h2>Mój numer kontaktowy </h2>
+        <h2>+48 693 020 729</h2>
       </div>
     </div>
   );
