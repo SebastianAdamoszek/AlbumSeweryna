@@ -57,10 +57,10 @@ export const Gallery = () => {
   return (
     <GalleryPageContainer>
       <ButtonsContainer>
-        <ButtonDelPhoto
+        {/* <ButtonDelPhoto
           toggleDeleteMode={toggleDeleteMode}
           isDeleteMode={isDeleteMode}
-        />
+        /> */}
         <ButtonAddPhoto />
       </ButtonsContainer>
 

@@ -22,7 +22,7 @@ export default function HomePage() {
           padding: "10px",
         }}
       >
-        <h2 data-aos="fade-up">Witamy w mojej aplikacji!</h2>
+        <h2 data-aos="fade-up">Witam w mojej aplikacji!</h2>
         <p data-aos="fade-up" style={{ textAlign: "center" }}>
           To jest mój prywatny album
         </p>
