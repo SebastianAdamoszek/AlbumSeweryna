@@ -85,7 +85,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 body {
-  background-image: url("/tools-desktop.webp");
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), /* półprzezroczysty czarny gradient */
+    url("/cs.jpg"); /* tło */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,6 +95,7 @@ body {
   height: 100%;
   cursor: url("/icons8-cursor.svg"), auto;
 }
+
 a {
   cursor: url("/cursor-pointer.svg"), pointer;
   /* cursor: pointer; */

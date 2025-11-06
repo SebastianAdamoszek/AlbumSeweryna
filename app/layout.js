@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
                 <ul className="footer">
                   <li>
                     <p>Album Seweryna</p>
-                    <span>aplikacja w ciągłej rozbudowie</span>
+                    <p>aplikacja w rozbudowie</p>
                   </li>
                 </ul>
               </footer>

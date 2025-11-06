@@ -1,48 +1,78 @@
 import styled from "styled-components";
 
 export const PhotoPublicWrapper = styled.div`
-  /* position: relative; */
+  position: relative;
   width: 100%;
-  width: 360px; /* Maksymalna szerokość dla zdjęcia */
-  height: 200px;
-  /* margin: 15px; */
-  padding: 10px;
-  background-color: #f9f9f9;
+  // max-width: 480px;
+  // height: 300px;
+  margin: 10px;
+  background-color: #000;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-   @media (min-width: 768px) {
-    width: 350px; 
-    height: 300px;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: 768px) {
+    height: 500px;
   }
 
   @media (min-width: 1024px) {
-    width: 480px; 
-    height: 400px;
-  } 
+    height: 700px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Utrzymuje proporcje i przycięcie */
-    border-radius: 8px;
-    transition: transform 0.5s ease;
+    object-fit: cover;
+    transition: transform 0.6s ease;
   }
 
   &:hover img {
-    transform: scale(1.05); /* Powiększenie zdjęcia przy hover */
+    transform: scale(1.08);
   }
+
+  /* Nakładka z gradientem */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    pointer-events: none;
+    z-index: 1;
+  }
+`;
+
+/* Opis zdjęcia */
+export const DescriptionText = styled.p`
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  padding: 6px 10px;
+  border-radius: 8px;
+  max-width: 90%;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 `;
